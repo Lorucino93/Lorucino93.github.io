@@ -11,5 +11,8 @@ button.addEventListener("click", function(e) {
           console.log('Output: ', output);
           coin.innerHTML = `${nombre}: ${output[nombre]}`;
         })
-        .catch(err => console.error(err));
+        .catch(err => {
+          console.error(err);
+          coin.innerHTML = error;
+        });
 })
