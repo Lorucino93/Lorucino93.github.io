@@ -4,7 +4,7 @@ const button = document.querySelector('#button');
 
 button.addEventListener("click", function(e) {
     coin.innerHTML = "pulsado"
-    nombre = user.value;
+    nombre = user.value.toLowerCase();
     fetch('https://server.duinocoin.com/balances.json')
         .then(result => result.json())
         .then((output) => {
