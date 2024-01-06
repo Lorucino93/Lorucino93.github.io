@@ -9,10 +9,14 @@ button.addEventListener("click", function(e) {
         .then(result => result.json())
         .then((output) => {
           console.log('Output: ', output);
-          coin.innerHTML = `${nombre}: ${output[nombre]}`;
+          coin.innerHTML = `${nombre}: ${changeToTwoDecimalFloat(output[nombre])}`;
         })
         .catch(err => {
           console.error(err);
           coin.innerHTML = error;
         });
 })
+
+function changeToTwoDecimalFloat(number) {
+  return number.parseToFloat();
+}
