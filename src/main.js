@@ -13,7 +13,7 @@ button.addEventListener("click", function(e) {
         })
         .catch(err => {
           console.error(err);
-          coin.innerHTML = error;
+          coin.innerHTML = "error";
         });
 })
 
