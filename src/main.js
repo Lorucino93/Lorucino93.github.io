@@ -9,7 +9,7 @@ button.addEventListener("click", function(e) {
         .then(result => result.json())
         .then((output) => {
           console.log('Output: ', output);
-          coin.innerHTML = `${nombre}: ${changeToTwoDecimalFloat(output[nombre])}`;
+          coin.innerHTML = `${nombre}: ${output[nombre]}`;
         })
         .catch(err => {
           console.error(err);
@@ -17,6 +17,6 @@ button.addEventListener("click", function(e) {
         });
 })
 
-function changeToTwoDecimalFloat(number) {
-  return number.parseToFloat();
-}
+// function changeToTwoDecimalFloat(number) {
+//   return number.parseToFloat();
+// }
