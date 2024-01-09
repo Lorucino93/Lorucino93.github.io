@@ -11,8 +11,8 @@ button.addEventListener("click", (e) => {
 });
 
 function getBalances() {
-  const callBackPromise = fetch("https://server.duinocoin.com/balances.json");
-  callBackPromise.then((result) => result.json())
+  fetch("https://server.duinocoin.com/balances.json")
+    .then((result) => result.json())
     .then((output) => {
       console.log("Output: ", output);
       balance = output;
@@ -21,5 +21,6 @@ function getBalances() {
     .catch((err) => {
       console.error(err);
       coin.innerHTML = "error";
+      setTimeout(getBalances, 1000);
     });
 }
