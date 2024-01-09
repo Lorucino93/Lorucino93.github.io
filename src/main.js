@@ -7,8 +7,8 @@ let balance;
 getBalances();
 
 button.addEventListener("click", (e) => {
-  nombre = coin.innerHTML.toLowerCase();
-  coin.innerHTML = `${nombre}: ${balance[nombre]}`;
+  let userName = user.innerHTML.toLowerCase().trim();
+  coin.innerHTML = `${userName}: ${balance[userName]}`;
 });
 
 function getBalances() {
