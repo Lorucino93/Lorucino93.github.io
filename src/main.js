@@ -2,7 +2,7 @@ const user = document.querySelector('#user');
 const coin = document.querySelector('#coin');
 const button = document.querySelector('#button');
 
-const balance;
+const balance = [];
 
 getBalances();
 
