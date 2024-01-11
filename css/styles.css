@@ -7,10 +7,14 @@
 }
 
 body {
+  display: flex;
+  align-items: center;
   background-color: var(--color4);
 }
 
 section {
+  margin: 5px;
+  width: fit-content;
   border-style: solid;
   display: flex;
   flex-direction: column;
