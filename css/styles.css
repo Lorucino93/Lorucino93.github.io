@@ -6,6 +6,10 @@
   --color5: #000000;
 }
 
+.unstyle {
+  clear: unset;
+}
+
 body {
   display: flex;
   align-items: center;
@@ -29,7 +33,7 @@ section {
   margin: 1rem 0;
   background-color: var(--color4);
 }
-.text_box:active {
+.text_box:focus {
   background-color: var(--color3);
   color: var(--color2);
 }
