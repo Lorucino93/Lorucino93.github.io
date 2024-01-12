@@ -6,7 +6,7 @@
   --color5: #000000;
 }
 
-body {
+body, main {
   display: flex;
   align-items: center;
   flex-direction: column;
