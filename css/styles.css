@@ -25,6 +25,11 @@ section {
   justify-content: center;
 }
 
-#title {
+.text_box {
+  margin: 1rem, 0;
+  background-color: var(--color4);
+}
+
+.title {
   
 }
