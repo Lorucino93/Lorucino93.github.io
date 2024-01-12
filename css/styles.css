@@ -30,9 +30,14 @@ section {
   border-style: solid;
   margin: 1rem 0;
   background-color: var(--color4);
+  cursor: text;
+  color: var(--color2);
+}
+.text_box:hover {
+  background-color: var(--color3)
 }
 .text_box:focus {
-  
+  color: var(--color5);
 }
 
 .title {

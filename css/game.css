@@ -1,0 +1,56 @@
+:root {
+    --position_x: 0;
+    --position_y: 0;
+  }
+  div#circuit {
+    position: relative;
+    width: 600px;
+    height: 300px;
+    border-style: solid;
+  }
+  div#player {
+    left: var(--position_x);
+    top: var(--position_y);
+    position: absolute;
+    background-color: red;
+    width: 60px;
+    height: 30px;
+  }
+  div#player:hover {
+    background-color: red;
+    animation-name: example;
+    animation-duration: 30s;
+  }
+  
+  /* The animation code */
+  @keyframes example {
+    0%   {
+      top: 0px;
+      left: 0px;
+    }
+    20%  {
+      left: calc(100% - 60px);
+      top: 0px;
+      transform: rotate(0deg);
+    }
+    30% {
+      left: calc(100% - 60px);
+      top: 0px;
+      transform: rotate(140deg);
+    }
+    50% {
+      left: calc(50% - 30px);
+      top: calc(300px - 30px);
+      transform: rotate(140deg);
+    }
+    75% {
+      left: calc(50% - 30px);
+      top: calc(300px - 30px);
+      transform: rotate(230deg);
+    }
+    90% {
+      left: 0px;
+      top: 0px;
+      transform: rotate(230deg);
+    }
+  }
