@@ -6,10 +6,6 @@
   --color5: #000000;
 }
 
-.unstyle {
-  clear: unset;
-}
-
 body {
   display: flex;
   align-items: center;
@@ -30,6 +26,7 @@ section {
 }
 
 .text_box {
+  all: unset;
   margin: 1rem 0;
   background-color: var(--color4);
 }
