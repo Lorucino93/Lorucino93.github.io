@@ -14,7 +14,8 @@ body {
 }
 
 section {
-  margin: 5px;
+  margin: 1rem;
+  padding: 1rem;
   width: fit-content;
   border-style: solid;
   display: flex;
