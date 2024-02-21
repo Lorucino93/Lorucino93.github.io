@@ -1,34 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lorucino World</title>
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/game.css">
-</head>
-<body>
-    <header>
-        <nav>
+<html>
+  <head>
+    <title>Consulta de API</title>
+  </head>
+  <body>
+    <button onclick="consultarAPI()">Consultar API</button>
+    <br>
+    <div id="resultado"></div>
 
-        </nav>
-    </header>
-    <main>
-        <section id="search_panel">
-            <span class="title">search by user name</span>
-            <span id="coin">0.00</span>
-            <input type="text" name="user" id="user" class="unstyle text_box" placeholder="Write the name">
-            <button id="button" disabled>press</button>
-        </section>
-        <section id="game">
-            <div id="circuit">
-                <div id="player">
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-    </footer>
-    <script src="/src/main.js"></script>
-</body>
+    <script>
+      function consultarAPI() {
+        fetch('URL_DE_TU_SCRIPT.obtenerDatos')
+          .then(response => response.json())
+          .then(data => {
+            document.getElementById('resultado').innerText = JSON.stringify(data, null, 2);
+          })
+          .catch(error => console.error('Error:', error));
+      }
+    </script>
+  </body>
 </html>
