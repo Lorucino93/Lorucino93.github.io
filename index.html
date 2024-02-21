@@ -10,7 +10,7 @@
 
     <script>
       function consultarAPI() {
-        fetch('URL_DE_TU_SCRIPT.obtenerDatos')
+        fetch('https://script.google.com/a/macros/airbus.com/s/AKfycbxEWz2bMOVe0EpZTndGCJPp8N9xkXgTNv6Z-Ik0rMt8ZjLGBMpRHDRqvXpUPOwYI-6L/exec.obtenerDatos')
           .then(response => response.json())
           .then(data => {
             document.getElementById('resultado').innerText = JSON.stringify(data, null, 2);
