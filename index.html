@@ -10,7 +10,7 @@
 
     <script>
       function consultarAPI() {
-        fetch('https://script.google.com/a/macros/airbus.com/s/AKfycbxEWz2bMOVe0EpZTndGCJPp8N9xkXgTNv6Z-Ik0rMt8ZjLGBMpRHDRqvXpUPOwYI-6L/exec.obtenerDatos')
+        fetch('https://script.google.com/a/macros/airbus.com/s/AKfycbwnwQgvPD8eWSmxS34PaQrxnR3N0d0koy6cYm_KsDfuOaIa89QSLDbUAXdl1z3YdhQQ/exec.obtenerDatos')
           .then(response => response.json())
           .then(data => {
             document.getElementById('resultado').innerText = JSON.stringify(data, null, 2);
